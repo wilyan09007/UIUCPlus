@@ -72,11 +72,12 @@ public class MutableInt extends Number implements Comparable<MutableInt>, Mutabl
      * @since 2.5
      */
     public MutableInt(final String value) {
-    try {
-    	this.value = Integer.parseInt(value);
-    } catch (Exception e) {
-    	System.out.println("Error: " + e.getMessage());
-    }
+        try {
+            this.value = Integer.parseInt(value);
+        }
+        catch(Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 
     /**
